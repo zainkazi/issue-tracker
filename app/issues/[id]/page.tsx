@@ -1,8 +1,5 @@
-import IssueStatusBadge from "@/app/components/IssueStatusBadge";
-import Link from "@/app/components/Link";
 import prisma from "@/prisma/db";
-import { Pencil2Icon } from "@radix-ui/react-icons";
-import { Box, Button, Card, Flex, Grid, Heading, Text } from "@radix-ui/themes";
+import { Box, Grid } from "@radix-ui/themes";
 import { notFound } from "next/navigation";
 import EditIssueButton from "./EditIssueButton";
 import IssueDetails from "./IssueDetails";

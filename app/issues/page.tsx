@@ -1,7 +1,7 @@
-import { Button, Table } from "@radix-ui/themes";
-import Link from "../components/Link";
 import prisma from "@/prisma/db";
+import { Table } from "@radix-ui/themes";
 import IssueStatusBadge from "../components/IssueStatusBadge";
+import Link from "../components/Link";
 import IssueActions from "./IssueActions";
 
 const IssuesPage = async () => {
@@ -10,7 +10,6 @@ const IssuesPage = async () => {
   return (
     <div>
       <IssueActions />
-
       <Table.Root variant="surface">
         <Table.Header>
           <Table.Row>
