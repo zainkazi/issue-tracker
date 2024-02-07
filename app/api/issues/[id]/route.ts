@@ -2,15 +2,14 @@ import { patchIssueSchema } from "@/app/validationSchemas";
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/db";
 import { getServerSession } from "next-auth";
-import { error } from "console";
 
 export const PATCH = async (
   request: NextRequest,
   { params }: { params: { id: string } }
 ) => {
-  // const session = await getServerSession();
+  const session = await getServerSession();
 
-  // if (!session) return NextResponse.json({}, { status: 401 });
+  if (!session) return NextResponse.json({}, { status: 401 });
 
   const body = await request.json();
   const validation = patchIssueSchema.safeParse(body);
