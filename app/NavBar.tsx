@@ -20,7 +20,7 @@ const NavBar = () => {
       <Container>
         <Flex align="center" gap="3" justify="between">
           <Flex align="center" gap="3">
-            <Link href="/">
+            <Link href="/" className="mr-3">
               <FaBug />
             </Link>
             <NavLinks />
