@@ -16,7 +16,7 @@ import LoadingSkeleton from "./components/LoadingSkeleton";
 
 const NavBar = () => {
   return (
-    <nav className="p-4 border-b mb-6">
+    <nav className="p-4 border-b border-zinc-600 mb-6">
       <Container>
         <Flex align="center" gap="3" justify="between">
           <Flex align="center" gap="3">
