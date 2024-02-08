@@ -24,7 +24,7 @@ const IssueStatusFilter = () => {
       <Select.Trigger placeholder="Filter by status" />
       <Select.Content>
         {statuses.map((status) => (
-          <Select.Item key={status.value} value={status.value || "all"}>
+          <Select.Item key={status.label} value={status.value || "all"}>
             {status.label}
           </Select.Item>
         ))}
