@@ -18,7 +18,7 @@ const NavBar = () => {
   return (
     <nav className="p-4 border-b mb-6">
       <Container>
-        <Flex align="center" justify="between">
+        <Flex align="center" gap="3" justify="between">
           <Flex align="center" gap="3">
             <Link href="/">
               <FaBug />

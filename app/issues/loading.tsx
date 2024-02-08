@@ -1,4 +1,4 @@
-import { Table } from "@radix-ui/themes";
+import { Flex, Table } from "@radix-ui/themes";
 import "react-loading-skeleton/dist/skeleton.css";
 import IssueActions from "./IssueActions";
 import LoadingSkeleton from "../components/LoadingSkeleton";
@@ -7,7 +7,7 @@ const LoadingIssues = () => {
   const issues = [1, 2, 3, 4, 5, 6, 7];
 
   return (
-    <div>
+    <Flex direction="column" gap="3">
       <IssueActions />
 
       <Table.Root variant="surface">
@@ -41,7 +41,7 @@ const LoadingIssues = () => {
           ))}
         </Table.Body>
       </Table.Root>
-    </div>
+    </Flex>
   );
 };
 
