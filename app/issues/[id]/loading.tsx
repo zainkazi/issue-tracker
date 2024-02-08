@@ -3,12 +3,8 @@ import { Flex, Card, Box } from "@radix-ui/themes";
 
 const LoadingIssue = () => {
   return (
-    <Box className="space-y-6">
-      <LoadingSkeleton />
-      <Flex gap="3">
-        <LoadingSkeleton />
-        <LoadingSkeleton />
-      </Flex>
+    <Box className="space-y-6 max-w-screen-xl">
+      <LoadingSkeleton count={2} />
       <Card>
         <LoadingSkeleton />
       </Card>
